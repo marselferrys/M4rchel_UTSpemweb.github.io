@@ -31,7 +31,3 @@ Proyek ini adalah bagian dari **UTS Pemrograman Web 2024** yang bertujuan untuk 
 - **Bootstrap 5**
 - **GitHub Pages**: Untuk hosting website secara online.
 
-## Cara Menjalankan Proyek
-1. Clone repository ini:
-   ```bash
-   git clone https://github.com/username/repository-name.git

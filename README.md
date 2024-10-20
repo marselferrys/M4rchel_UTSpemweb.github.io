@@ -9,10 +9,10 @@
 
 ## Deskripsi Proyek
 
-Proyek ini adalah bagian dari **UTS Pemrograman Web 2024** yang bertujuan untuk membuat sebuah website responsif menggunakan **HTML**, **CSS**, dan **Bootstrap**. Tema dari website ini adalah hero **Tinkerer** dari game **Dragon Nest**, yang memberikan informasi tentang skill, strategi, dan fitur lain terkait karakter tersebut.
+Proyek ini adalah bagian dari **UTS Pemrograman Web 2024** yang bertujuan untuk membuat sebuah website responsif menggunakan **HTML**, **CSS**, dan **Bootstrap**. Tema dari website ini adalah hero **Tinkerer** dari game **Dragon Nest**, yang memberikan informasi tentang biodata, skill dan fitur lain terkait karakter tersebut.
 
 ### Struktur Halaman
-- **utama.html**: Halaman utama yang berisi informasi tentang Tinkerer, sejarahnya dalam game, serta peranannya dalam pertempuran.
+- **utama.html**: Halaman utama yang berisi informasi tentang Tinkerer, sejarahnya dalam game, serta skill dan strategi.
 - **form.html**: Halaman form untuk para fans tinkerer untuk mendaftar sebagai fans hero tinkerer.
 - **tabel.html**: Halaman yang menampilkan data data dari form pendaftaran fans tinkerer yang berisi nama, tgl lahir, jenis kelamin, hobi, skill favorit.
 

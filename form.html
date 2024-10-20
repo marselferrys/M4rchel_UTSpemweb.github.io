@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title itemprop="name">Halaman Utama - Tinkerer Dragon Nest</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        form{
+    background-color: #f5c518;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(168, 149, 149, 0.808);
+    width: 80%;
+    margin: 20px auto;
+}
+ 
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="radio"],
+form input[type="checkbox"],
+form input[type="submit"],
+form input[type="button"],
+form button,
+form select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+form input[type="text"]:focus,
+form input[type="date"]:focus,
+form input[type="text"]:focus-visible {
+    border-color: #007bff;
+    outline: none;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+form button {
+    background-color: #1e1e1e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+    </style>
+</head>
+<body itemscope itemtype="https://schema.org/WebPage">
+    
+    <div class="header" itemscope itemtype="https://schema.org/WPHeader">
+        <img src="image/tinkerer.png" alt="Logo Tinkerer Dragon Nest" itemprop="image">
+        <div class="box_text">
+            <marquee direction="right" scrollamount="10">
+                <h1 itemprop="headline"><b>TABEL PENDAFTARAN FANS TINKERER - DRAGON NEST</b></h1>
+            </marquee>
+        </div>
+    </div>
+
+    <div class="navbar" itemscope itemtype="https://schema.org/SiteNavigationElement">
+        <p class="active">...</p>
+    </div>
+
+    <div class="row">
+        <div class="side" itemscope itemtype="https://schema.org/WPSideBar">
+            <h2><b itemprop="about">SIDE BAR</b></h2>
+            <a href="utama.html"><b>HOME</b></a>
+            <a href="form.html"><b>FORM</b></a>
+            <a href="tabel.html"><b>TABEL</b></a>
+        </div>
+
+        <div class="main" itemscope itemtype="https://schema.org/WebPageElement">
+            <h2 style="text-align: center;background-color: #1e1e1e; padding: 20px;"><b itemprop="about">PENDAFTARAN FANS TINKERER</b></h2>
+            <form action="/submit_form" method="GET" itemprop="potentialAction" itemscope itemtype="https://schema.org/Action">
+                <meta itemprop="target" content="/submit_form">
+                
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required itemprop="name"><br><br>
+                
+                <label for="dob">Tanggal Lahir:</label>
+                <input type="date" id="dob" name="dob" required itemprop="birthDate"><br><br>
+
+                <label>Jenis Kelamin:</label>
+                <label>
+                    <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-Laki" required itemprop="gender">
+                    Laki-Laki
+                </label>
+                <label>
+                    <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required itemprop="gender">
+                    Perempuan
+                </label>
+
+                <label for="hobby">Hobi:</label>
+                <label>
+                    <input type="checkbox" id="gaming" name="hobby" value="gaming" itemprop="hobby">
+                    Gaming
+                </label>
+                <label>
+                    <input type="checkbox" id="coding" name="hobby" value="coding" itemprop="hobby">
+                    Coding
+                </label>
+
+                <label for="favorite_skill">Skill Favorit Tinkerer:</label>
+                <select id="attack" name="attack" required itemprop="favoriteSkill">
+                    <option value="">-- Pilih Skill --</option>
+                    <option value="quick_shot">Quick Shot</option>
+                    <option value="air_shot">Air Shot</option>
+                    <option value="dodge">Dodge</option>
+                    <option value="wrench_smashing">Wrench Smashing</option>
+                    <option value="magnifier_attack">Magnifier Attack</option>
+                    <option value="napalm">Napalm</option>
+                    <option value="wax">Wax</option>
+                    <option value="air_bomb">Air Bomb</option>
+                </select><br>
+                
+                <button type="submit" itemprop="actionStatus"><b>KIRIM</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer" itemscope itemtype="https://schema.org/WPFooter">
+        <p>&copy; 2024 Tinkerer Fan Page - All about Tinkerer from Dragon Nest | Created by <a href="https://www.linkedin.com/in/marselferrys/" target="_blank" itemprop="creator">Marchel Ferry Timoteus S</a></p>
+    </div>
+</body>
+</html>

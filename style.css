@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    background-image: url('image/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.header h1 {
+    font-size: 40px; 
+    color: #f5c518;
+}
+
+.box_text {
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+    margin-top: 10px;
+    border: 1px solid grey;
+}
+
+.header img {
+    background-color: white;
+    border-radius: 30%;
+    width: 20%;
+    height: auto;
+}
+
+.navbar { 
+    overflow: hidden;
+    background-color: #f5c518;
+    border: 1px solid #ddd;
+    top: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side {
+    width: 20%;
+    background-color: #1e1e1e;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+.side a, .side h2 {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.side a:hover {
+    background-color: #f5c518;
+    color: #121212;
+    border-radius: 5px;
+}
+
+.main {
+    flex: 70%;
+    background-color: #121212;
+    padding: 20px;
+}
+
+.main h2, .main p, .main td, .main li {
+    color: #ffffff;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #1e1e1e;
+}
+
+.footer p {
+    color: #ffffff;
+}
+
+.footer a {
+    color: #f5c518;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.table td, .table th {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f5c518;
+    color: #1e1e1e;
+}
+
+.table tr:nth-child(even) {
+    background-color: #1e1e1e;
+}
+
+.table tr:hover {
+    background-color: #7686ce;
+}
+
+@media screen and (max-width: 768px) {
+    .side {
+        width: 100%;
+        position: relative;
+        white-space: normal;
+    }
+    .main {
+        flex: 100%;
+    }
+    .header img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        padding: 40px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .navbar {
+        font-size: 14px;
+    }
+
+    .main, .side {
+        padding: 10px;
+    }
+}
